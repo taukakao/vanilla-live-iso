@@ -7,6 +7,8 @@ Budgie (budgie-remix at the time), some stuff from livecd-rootfs from launchpad
 and Elementary OS, thanks to the amazing devs from all around!
 Elem Link: https://github.com/elementary/os</sup2>
 
+------------
+
 </div>
 
 > Releases usually follows the Ubuntu release cycle i.e. `22.10, 23.04..`. Releases named `22.10-r1` means that the release is still 22.10 with just a refreshed of the repositories and packages, this is meant to help users getting the latest release with updated packages, with more fixes and features OTB.
