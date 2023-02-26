@@ -1,4 +1,4 @@
-name: VanillaOS kinetic
+name: VanillaOS lunar
 
 on:
   workflow_dispatch
@@ -29,5 +29,5 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: VanillaOS 22.10
+        name: VanillaOS 2.0
         path: builds/
