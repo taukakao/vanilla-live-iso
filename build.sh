@@ -27,8 +27,8 @@ apt-get update
 apt-get install -y live-build patch gnupg2 binutils zstd
 dpkg -i debs/*.deb
 
-# TODO: patched lb
-cp binary_grub-efi /usr/lib/live/build/binary_grub-efi
+# TODO: workaround a bug in lb by increasing number of blocks for creating efi.img
+patch /usr/lib/live/build/binary_grub-efi < binary_grub-efi.patch
 
 # TODO: Remove this once debootstrap has a script to build lunar images in our container:
 # https://salsa.debian.org/installer-team/debootstrap/blob/master/debian/changelog
