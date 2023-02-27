@@ -1,5 +1,5 @@
 #!/bin/sh
-# Description: Setup Vanilla utilities
+# Description: Setup Vanilla Installer xsession
 
 mkdir -p /var/lib/AccountsService/users/
 echo "[User]
