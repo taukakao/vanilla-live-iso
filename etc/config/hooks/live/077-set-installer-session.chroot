@@ -1,0 +1,6 @@
+#!/bin/sh
+# Description: Setup Vanilla utilities
+
+mkdir -p /var/lib/AccountsService/users/
+echo "[User]
+Session=installer" > /var/lib/AccountsService/users/vanilla
