@@ -68,7 +68,7 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
-  lb build --debug --verbose
+  lb build
 
   echo -e "
 #---------------------------#
