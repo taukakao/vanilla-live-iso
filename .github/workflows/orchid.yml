@@ -1,4 +1,4 @@
-name: VanillaOS lunar
+name: VanillaOS orchid
 
 on:
   workflow_dispatch
