@@ -24,10 +24,10 @@ lb config noauto \
     --mirror-bootstrap "$MIRROR_URL" \
     --parent-mirror-bootstrap "$MIRROR_URL" \
     --mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z" \
-    --parent-mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z \
-    --mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z \
+    --parent-mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z" \
+    --mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z" \
     --parent-mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230208T130000Z" \
-    --mirror-binary "http://snapshot.debian.org/archive/debian/20230208T130000Z \
+    --mirror-binary "http://snapshot.debian.org/archive/debian/20230208T130000Z" \
     --parent-mirror-binary "http://snapshot.debian.org/archive/debian/20230208T130000Z" \
     --keyring-packages debian-keyring \
     --apt-options "--yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100" \
