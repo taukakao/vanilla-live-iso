@@ -1,2 +1,1 @@
-deb http://ppa.launchpad.net/vanilla-os/testing/ubuntu lunar main
-# deb-src http://ppa.launchpad.net/vanilla-os/testing/ubuntu lunar main
+deb https://download.opensuse.org/repositories/home:/fabricators:/orchid/Debian_Unstable/ ./
