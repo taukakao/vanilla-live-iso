@@ -16,8 +16,8 @@ lb config noauto \
     --initramfs none \
     --distribution "$BASECODENAME" \
     --parent-distribution "$BASECODENAME" \
-    --archive-areas "main restricted universe multiverse" \
-    --parent-archive-areas "main restricted universe multiverse" \
+    --archive-areas "main non-free" \
+    --parent-archive-areas "main non-free" \
     --linux-packages linux-image \
     --linux-flavours "$KERNEL_FLAVORS" \
     --bootappend-live "boot=casper maybe-ubiquity quiet splash" \
