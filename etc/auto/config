@@ -17,7 +17,7 @@ lb config noauto \
     --distribution "$BASECODENAME" \
     --parent-distribution "$BASECODENAME" \
     --archive-areas "main non-free" \
-    --parent-archive-areas "main non-free" \
+    --parent-archive-areas "main contrib non-free" \
     --linux-packages linux-image \
     --linux-flavours "$KERNEL_FLAVORS" \
     --bootappend-live "boot=casper maybe-ubiquity quiet splash" \
