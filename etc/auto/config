@@ -23,12 +23,12 @@ lb config noauto \
     --bootappend-live "boot=casper maybe-ubiquity quiet splash" \
     --mirror-bootstrap "$MIRROR_URL" \
     --parent-mirror-bootstrap "$MIRROR_URL" \
-    --mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230314T211539Z" \
-    --parent-mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230314T211539Z" \
-    --mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230314T211539Z" \
-    --parent-mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230314T211539Z" \
-    --mirror-binary "http://snapshot.debian.org/archive/debian/20230314T211539Z" \
-    --parent-mirror-binary "http://snapshot.debian.org/archive/debian/20230314T211539Z" \
+    --mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230321T210320Z" \
+    --parent-mirror-chroot-security "http://snapshot.debian.org/archive/debian-security/20230321T210320Z" \
+    --mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230321T210320Z" \
+    --parent-mirror-binary-security "http://snapshot.debian.org/archive/debian-security/20230321T210320Z" \
+    --mirror-binary "http://snapshot.debian.org/archive/debian/20230321T210320Z" \
+    --parent-mirror-binary "http://snapshot.debian.org/archive/debian/20230321T210320Z" \
     --keyring-packages debian-keyring \
     --apt-options "--yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100" \
     --apt-recommends false \
