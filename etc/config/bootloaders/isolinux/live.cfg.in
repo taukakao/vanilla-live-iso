@@ -7,15 +7,15 @@ timeout 50
 label live-@FLAVOUR@
 	menu label ^Try or install Vanilla OS
 	menu default
-	linux /casper/vmlinuz
-	initrd /casper/initrd.lz
+	linux /live/vmlinuz
+	initrd /live/initrd.img
 	append @APPEND_LIVE@
 
 label live-failsafe
 	menu label Start Vanilla OS (Safe Graphics)
 	set gfxpayload=keep
-	linux /casper/vmlinuz
-	initrd /casper/initrd.lz
+	linux /live/vmlinuz
+	initrd /live/initrd.img
 	append @APPEND_LIVE@ nomodeset
 
 label hd
