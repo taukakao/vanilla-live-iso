@@ -18,7 +18,7 @@ lb config noauto \
     --parent-distribution "$BASECODENAME" \
     --archive-areas "main non-free" \
     --parent-archive-areas "main contrib non-free non-free-firmware" \
-    --linux-packages linux-image \
+    --linux-packages "linux-image linux-headers" \
     --linux-flavours "$KERNEL_FLAVORS" \
     --bootappend-live "boot=live quiet splash username=vanilla" \
     --mirror-bootstrap "$MIRROR_URL" \
@@ -42,6 +42,7 @@ lb config noauto \
     --zsync false \
     --security true \
     --updates false \
+    --clean \
     --debian-installer live \
     --debootstrap-options "--exclude=pinephone-tweaks,mobile-tweaks-common,librem5-tweaks,pinetab-tweaks --include=apt-transport-https,ca-certificates,openssl" \
     --checksums md5 \
