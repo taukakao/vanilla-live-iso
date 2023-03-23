@@ -6,7 +6,7 @@ xfsprogs
 jfsutils
 reiserfsprogs
 shim-signed
-shim
+shim-helpers-amd64-signed
 lvm2
 dmraid
 wamerican
