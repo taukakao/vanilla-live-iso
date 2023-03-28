@@ -30,6 +30,7 @@ EOF
 
 # Add vanilla repo key
 apt-key add "$BASE_DIR"/etc/config/archives/vanilla.key
+apt-key add "$BASE_DIR"/etc/config/archives/vanilla-main.key
 
 # Add vanilla keyring
 cp "$BASE_DIR"/etc/config/includes.chroot/usr/share/keyrings/vanilla_keyring.gpg /usr/share/keyrings/
