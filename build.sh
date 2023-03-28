@@ -19,16 +19,34 @@ source "$BASE_DIR"/"$CONFIG_FILE"
 
 echo -e "
 #----------------------#
-# INSTALL DEPENDENCIES #
+# INSTALL VANILLA REPO #
 #----------------------#
 "
 
+# Add vanilla sources
+cat > /etc/apt/sources.list.d/vanilla-base.list <<EOF
+deb [arch=amd64] http://repo.vanillaos.org/ $BASECODENAME main
+EOF
+
+# Add vanilla repo key
+apt-key add "$BASE_DIR"/etc/config/archives/vanilla.key
+
+# Add vanilla keyring
+cp "$BASE_DIR"/etc/config/includes.chroot/usr/share/keyrings/vanilla_keyring.gpg /usr/share/keyrings/
+
+# Remove stock debian sources
+rm -f /etc/apt/sources.list.d/debian.sources
+
+echo -e "
+#----------------------#
+# INSTALL DEPENDENCIES #
+#----------------------#
+"
 apt-get update
 apt-get install -y live-build patch gnupg2 binutils zstd ca-certificates
 dpkg -i debs/*.deb
 
 # TODO: workaround a bug in lb by increasing number of blocks for creating efi.img
-patch /usr/lib/live/build/binary_grub-efi < binary_grub-efi.patch
 
 # TODO: Remove this once debootstrap has a script to build lunar images in our container:
 # https://salsa.debian.org/installer-team/debootstrap/blob/master/debian/changelog
@@ -36,7 +54,6 @@ ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/luna
 
 build () {
   BUILD_ARCH="$1"
-
   mkdir -p "$BASE_DIR/tmp/$BUILD_ARCH"
   cd "$BASE_DIR/tmp/$BUILD_ARCH" || exit
 
@@ -50,6 +67,7 @@ build () {
   ln -s "package-lists.$PACKAGE_LISTS_SUFFIX" "config/package-lists"
 
   echo -e "
+
 #------------------#
 # LIVE-BUILD CLEAN #
 #------------------#
@@ -68,14 +86,13 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
-  lb build
+  lb build --verbose
 
   echo -e "
 #---------------------------#
 # MOVE OUTPUT TO BUILDS DIR #
 #---------------------------#
 "
-
   YYYYMMDD="$(date +%Y%m%d)"
   OUTPUT_DIR="$BASE_DIR/builds/$BUILD_ARCH"
   mkdir -p "$OUTPUT_DIR"
