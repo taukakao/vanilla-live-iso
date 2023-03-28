@@ -87,7 +87,7 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
-  lb build --verbose
+  lb build
 
   echo -e "
 #---------------------------#
