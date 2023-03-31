@@ -6,8 +6,6 @@ intel-microcode
 iucode-tool
 setserial
 user-setup
-dosfstools
-squashfs-tools
 
 efibootmgr
 grub-efi-amd64

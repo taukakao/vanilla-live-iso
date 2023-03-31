@@ -3,6 +3,8 @@ live-config
 live-config-systemd
 live-tools
 user-setup
+dosfstools
+squashfs-tools
 
 shim-signed
 shim-helpers-amd64-signed
