@@ -11,7 +11,8 @@
 [Be the first!](https://github.com/sponsors/Vanilla-OS)
 
 🍺 Generous Backers\
-🍺 [quentincaffeino](https://github.com/quentincaffeino)
+[quentincaffeino](https://github.com/quentincaffeino)
 
-☕️ Backer\
-[Be the first!](https://github.com/sponsors/Vanilla-OS)
+☕️ Backer
+- [thunlix](https://github.com/thunlix)
+- [purplehepatica](https://github.com/purplehepatica)
