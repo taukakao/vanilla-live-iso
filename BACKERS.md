@@ -17,3 +17,5 @@
 - [thunlix](https://github.com/thunlix)
 - [purplehepatica](https://github.com/purplehepatica)
 - [omegaleo](https://github.com/omegaleo)
+- [danmac](https://github.com/danmac)
+- [theMackabu](https://github.com/theMackabu)
