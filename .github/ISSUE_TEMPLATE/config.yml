@@ -1,4 +1,7 @@
+blank_issues_enabled: true
 contact_links:
-  - name: "❓ Ask a Question on Discord"
-    url: https://discord.gg/vanilla-os-1023243680829681704
-    about: Please ask and answer questions there.
+  - name: "Discord Server"
+    url: https://discord.gg/3cD2Q7Ht3S
+    about: "Consider joining the Discord Server to discuss your issue, question or suggestion with the community before opening an issue."
+  - name: "r/vanillaos Subreddit"
+    url: https://www.reddit.com/r/vanillaos
