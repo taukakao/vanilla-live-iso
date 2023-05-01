@@ -5,6 +5,7 @@ live-tools
 user-setup
 dosfstools
 squashfs-tools
+cryptsetup
 
 shim-signed
 shim-helpers-amd64-signed
