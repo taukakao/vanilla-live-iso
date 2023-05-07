@@ -40,7 +40,7 @@ The following example uses Docker and assumes you have Docker correctly installe
     docker run --privileged -i -v /proc:/proc \
         -v ${PWD}:/working_dir \
         -w /working_dir \
-        debian:latest \
+        debian:sid \
         /bin/bash -s etc/terraform.conf < build.sh
     ```
 
