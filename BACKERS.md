@@ -19,3 +19,4 @@
 - [omegaleo](https://github.com/omegaleo)
 - [danmac](https://github.com/danmac)
 - [theMackabu](https://github.com/theMackabu)
+- [AsciiWolf](https://github.com/AsciiWolf)
