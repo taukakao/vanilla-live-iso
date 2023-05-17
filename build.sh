@@ -44,14 +44,7 @@ echo -e "
 #----------------------#
 "
 apt-get update
-apt-get install -y live-build patch gnupg2 binutils zstd ca-certificates
-dpkg -i debs/*.deb
-
-# TODO: workaround a bug in lb by increasing number of blocks for creating efi.img
-
-# TODO: Remove this once debootstrap has a script to build lunar images in our container:
-# https://salsa.debian.org/installer-team/debootstrap/blob/master/debian/changelog
-ln -sfn /usr/share/debootstrap/scripts/gutsy /usr/share/debootstrap/scripts/lunar
+apt-get install -y live-build gnupg2 binutils zstd ca-certificates
 
 build () {
   BUILD_ARCH="$1"
@@ -68,7 +61,6 @@ build () {
   ln -s "package-lists.$PACKAGE_LISTS_SUFFIX" "config/package-lists"
 
   echo -e "
-
 #------------------#
 # LIVE-BUILD CLEAN #
 #------------------#
