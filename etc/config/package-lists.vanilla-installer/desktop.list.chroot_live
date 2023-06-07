@@ -40,6 +40,8 @@ gnome-disk-utility
 gnome-control-center
 kgx
 
+network-manager-gnome
+
 epiphany-browser
 xdg-desktop-portal-gnome
 evolution-data-server
