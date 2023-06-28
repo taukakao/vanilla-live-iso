@@ -29,6 +29,7 @@ zstd
 
 vanilla-installer
 vanilla-backgrounds
+vanilla-gnome-default-settings
 
 gdm3
 xorg
