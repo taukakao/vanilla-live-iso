@@ -48,7 +48,9 @@ gnome-disk-utility
 gnome-control-center
 kgx
 
+wpasupplicant
 network-manager-gnome
+bluez
 
 epiphany-browser
 xdg-desktop-portal-gnome
