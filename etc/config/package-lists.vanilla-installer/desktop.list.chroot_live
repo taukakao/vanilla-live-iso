@@ -50,6 +50,7 @@ kgx
 
 wpasupplicant
 network-manager-gnome
+modemmanager
 bluez
 
 epiphany-browser
