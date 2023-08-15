@@ -15,8 +15,8 @@ lb config noauto \
     --mode debian \
     --distribution "$BASECODENAME" \
     --parent-distribution "$BASECODENAME" \
-    --archive-areas "main non-free" \
-    --parent-archive-areas "main" \
+    --archive-areas "main contrib non-free non-free-firmware" \
+    --parent-archive-areas "main contrib non-free non-free-firmare" \
     --linux-packages "linux-image linux-headers" \
     --linux-flavours "$KERNEL_FLAVORS" \
     --bootappend-live "boot=live config username=vanilla user-fullname=Bee quiet splash" \
