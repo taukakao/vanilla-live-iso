@@ -15,19 +15,22 @@ lb config noauto \
     --mode debian \
     --distribution "$BASECODENAME" \
     --parent-distribution "$BASECODENAME" \
-    --archive-areas "main contrib non-free non-free-firmware" \
-    --parent-archive-areas "main contrib non-free non-free-firmare" \
     --linux-packages "linux-image linux-headers" \
     --linux-flavours "$KERNEL_FLAVORS" \
-    --bootappend-live "boot=live config username=vanilla user-fullname=Bee quiet splash" \
-    --mirror-bootstrap "$MIRROR_URL" \
+    --bootappend-live "boot=live config username=vanilla user-fullname=Vanilla quiet splash" \
+    \
+    --parent-archive-areas "main contrib non-free non-free-firmare" \
     --parent-mirror-bootstrap "$MIRROR_URL" \
-    --mirror-chroot-security "http://deb.debian.org/debian-security" \
     --parent-mirror-chroot-security "http://deb.debian.org/debian-security" \
-    --mirror-binary-security "http://deb.debian.org/debian-security" \
     --parent-mirror-binary-security "http://deb.debian.org/debian-security" \
-    --mirror-binary "https://repo2.vanillaos.org" \
     --parent-mirror-binary "https://repo2.vanillaos.org" \
+    \
+    --archive-areas "main contrib non-free non-free-firmware" \
+    --mirror-bootstrap "$MIRROR_URL" \
+    --mirror-chroot-security "http://deb.debian.org/debian-security" \
+    --mirror-binary-security "http://deb.debian.org/debian-security" \
+    --mirror-binary "https://repo2.vanillaos.org" \
+    \
     --keyring-packages debian-keyring \
     --apt-options "--yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100" \
     --apt-recommends false \
