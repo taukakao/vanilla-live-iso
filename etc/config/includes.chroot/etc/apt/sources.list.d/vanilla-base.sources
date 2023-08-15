@@ -1,3 +1,4 @@
+Enabled: yes
 Types: deb
 URIs: http://repo2.vanillaos.org/
 Suites: sid
