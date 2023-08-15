@@ -3,29 +3,10 @@
 
 echo "P: Begin executing remove-blacklisted-packages chroot hook..."
 
-#dist="$(lsb_release -c -s -u 2>&1)"||dist="$(lsb_release -c -s)"
-
-#apt-get install --no-install-recommends -f -q -y bzr
-
-#bzr export --quiet ubuntu-seeds "lp:~ubuntu-core-dev/ubuntu-seeds/ubuntu.$dist"
-
-#bzr export --quiet platform "lp:~ubuntu-core-dev/ubuntu-seeds/platform.$dist"
-
-#for package in $(cat 'platform/blacklist' 'ubuntu-seeds/blacklist' | grep -v '#'); do
-#    apt-get autoremove --purge -f -q -y "$package"
-#done
-
-#apt-get autoremove --purge -f -q -y bzr
-
 apt-get autoremove --purge -f -q -y \
-    ubuntu-desktop \
-    ubuntu-session \
     apport \
     snapd \
-    update-manager \
     update-notifier
-
-rm -R ../ubuntu-seeds ../platform
 
 # fake desktop entries to prevent some applications from displaying
 mkdir -p /etc/skel/.local/share/applications
