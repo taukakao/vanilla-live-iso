@@ -1,13 +1,12 @@
 name: VanillaOS orchid
 
 on:
-  push:
-    branches: [ "orchid" ]
   workflow_dispatch:
+    branches: [ orchid ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container:
       image: ghcr.io/vanilla-os/pico:main
       volumes:
