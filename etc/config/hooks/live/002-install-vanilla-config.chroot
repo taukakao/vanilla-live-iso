@@ -9,3 +9,4 @@ if [ -f /usr/share/applications/org.vanillaos.Installer.desktop ]; then
 else
     cp /usr/local/share/applications/org.vanillaos.Installer.desktop /etc/skel/.config/autostart/
 fi
+
