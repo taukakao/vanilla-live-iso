@@ -18,6 +18,13 @@ label live-failsafe
 	initrd @INITRD@
 	append @APPEND_LIVE@ nomodeset
 
+label live-failsafe
+	menu label Start Vanilla OS (Nouveau unloaded)
+	set gfxpayload=keep
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE@ modprobe.blacklist=nouveau
+
 label hd
 	menu label ^Boot from next volume
 	localboot 0x80
