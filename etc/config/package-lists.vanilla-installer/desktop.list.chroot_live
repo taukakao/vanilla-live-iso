@@ -11,7 +11,17 @@ shim-signed
 shim-helpers-amd64-signed
 
 firmware-linux
+firmware-linux-nonfree
 firmware-linux-free
+firmware-iwlwifi
+firmware-realtek
+firmware-atheros
+firmware-b43-installer
+firmware-brcm80211
+firmware-sof-signed
+intel-microcode
+amd64-microcode
+b43-fwcutter
 
 ca-certificates
 btrfs-progs
