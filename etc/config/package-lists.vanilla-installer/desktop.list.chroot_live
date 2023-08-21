@@ -22,6 +22,7 @@ firmware-sof-signed
 intel-microcode
 amd64-microcode
 b43-fwcutter
+spice-webdavd
 
 ca-certificates
 btrfs-progs
