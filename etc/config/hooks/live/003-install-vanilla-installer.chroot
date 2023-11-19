@@ -1,0 +1,6 @@
+#!/bin/sh
+# Description: Install vanilla-installer from source
+
+wget https://github.com/Vanilla-OS/vanilla-installer/releases/download/continuous/vanilla-installer.deb
+apt-get install -y vanilla-installer.deb
+rm vanilla-installer.deb
