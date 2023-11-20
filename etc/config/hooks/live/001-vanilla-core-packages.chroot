@@ -1,0 +1,10 @@
+#!/bin/sh
+# Description: Install base-files and desktop-base from source
+
+wget https://github.com/Vanilla-OS/base-files/releases/download/continuous/base-files.deb
+apt-get install -y ./base-files.deb
+rm base-files.deb
+
+wget https://github.com/Vanilla-OS/desktop-base/releases/download/continuous/desktop-base.deb
+apt-get install -y ./desktop-base.deb
+rm desktop-base.deb
