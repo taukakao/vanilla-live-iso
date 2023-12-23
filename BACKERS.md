@@ -31,3 +31,5 @@
 - [jacobranson](https://github.com/jacobranson)
 - [RickBrewer](https://github.com/RickBrewer)
 - [ItsScyther](https://github.com/ItsScyther)
+- [EdwinPA](https://github.com/EdwinPA)
+- [NixyJuppie](https://github.com/NixyJuppie)
