@@ -26,3 +26,8 @@
 - [kerenon](https://github.com/kerenon)
 - [AndrewNoonan2004](https://github.com/AndrewNoonan2004)
 - [oliveigah](https://github.com/oliveigah)
+- [AeroBliss](https://github.com/AeroBliss)
+- [DeveshSinghania](https://github.com/DeveshSinghania)
+- [jacobranson](https://github.com/jacobranson)
+- [RickBrewer](https://github.com/RickBrewer)
+- [ItsScyther](https://github.com/ItsScyther)
