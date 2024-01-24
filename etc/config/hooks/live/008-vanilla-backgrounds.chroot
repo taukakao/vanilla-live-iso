@@ -1,0 +1,6 @@
+#!/bin/sh
+# Description: Install vanilla-backgrounds from source
+
+wget https://github.com/Vanilla-OS/vanilla-backgrounds/releases/download/continuous/vanilla-backgrounds.deb
+apt-get install -y ./vanilla-backgrounds.deb
+rm vanilla-backgrounds.deb
