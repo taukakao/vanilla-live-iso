@@ -2,11 +2,13 @@
 # Description: Install base-files and desktop-base from source
 
 wget https://github.com/Vanilla-OS/base-files/releases/download/continuous/base-files.deb
-apt-get install -y ./base-files.deb
+yes | dpkg -i --force-overwrite ./base-files.deb || true
+apt-get install -y -f
 rm base-files.deb
 
 wget https://github.com/Vanilla-OS/desktop-base/releases/download/continuous/desktop-base.deb
-apt-get install -y ./desktop-base.deb
+yes | dpkg -i --force-overwrite ./desktop-base.deb || true
+apt-get install -y -f
 rm desktop-base.deb
 
 wget https://github.com/Vanilla-OS/vanilla-backgrounds/releases/download/continuous/vanilla-backgrounds.deb
