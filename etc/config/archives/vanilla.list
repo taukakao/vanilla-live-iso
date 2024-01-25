@@ -1,2 +1,2 @@
-deb https://download.opensuse.org/repositories/home:/fabricators:/orchid/Debian_Unstable/ ./
+# deb https://download.opensuse.org/repositories/home:/fabricators:/orchid/Debian_Unstable/ ./
 deb https://repo2.vanillaos.org sid main contrib non-free non-free-firmware
