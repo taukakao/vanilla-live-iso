@@ -41,8 +41,6 @@ sudo
 locales
 zstd
 
-vanilla-gnome-default-settings
-
 gdm3
 xorg
 
@@ -93,10 +91,6 @@ gparted
 podman
 
 plymouth-themes
-plymouth-theme-vanilla
-plymouth-theme-vanilla-bgrt
-plymouth-theme-vanilla-logo
-plymouth-theme-vanilla-text
 
 open-vm-tools
 open-vm-tools-desktop
