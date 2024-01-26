@@ -94,5 +94,6 @@ plymouth-themes
 
 open-vm-tools
 open-vm-tools-desktop
+qemu-guest-agent
 virtualbox-guest-utils
 virtualbox-guest-x11
