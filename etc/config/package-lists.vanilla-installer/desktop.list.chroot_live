@@ -32,7 +32,6 @@ xfsprogs
 jfsutils
 reiserfsprogs
 lvm2
-dmraid
 wamerican
 fwupdate
 mokutil
