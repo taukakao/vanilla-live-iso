@@ -28,9 +28,9 @@ jobs:
       run: ./build.sh etc/terraform.conf
 
     - name: Get current date
-      run: echo "::set-env name=CURRENT_DATE::$(date +'%Y-%m-%d')"
+      run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
 
     - uses: actions/upload-artifact@v4
       with:
-        name: VanillaOS 2 Beta ${{ env.CURRENT_DATE }} ${{ env.GITHUB_RUN_NUMBER }}
+        name: VanillaOS 2 Beta ${{ env.CURRENT_DATE }} ${{ github.run_number }}
         path: builds/
