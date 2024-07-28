@@ -1,19 +1,27 @@
-🏆 Platinum Sponsor\
+# Backers
+
+## 🏆 Platinum Sponsor
+
 [Be the first!](https://github.com/sponsors/Vanilla-OS)
 
-🥇 Gold Sponsor\
+## 🥇 Gold Sponsor
+
 [Be the first!](https://github.com/sponsors/Vanilla-OS)
 
-🥈 Silver Sponsor\
+## 🥈 Silver Sponsor
+
 [Be the first!](https://github.com/sponsors/Vanilla-OS)
 
-🥉 Bronze Sponsors\
+## 🥉 Bronze Sponsors
+
 [Be the first!](https://github.com/sponsors/Vanilla-OS)
 
-🍺 Generous Backers\
+## 🍺 Generous Backers
+
 - [quentincaffeino](https://github.com/quentincaffeino)
 
-☕️ Backer
+## ☕️ Backer
+
 - [thunlix](https://github.com/thunlix)
 - [purplehepatica](https://github.com/purplehepatica)
 - [omegaleo](https://github.com/omegaleo)

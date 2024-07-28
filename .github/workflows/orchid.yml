@@ -1,4 +1,4 @@
-name: VanillaOS orchid
+name: Build ISO
 
 on:
   workflow_dispatch:
@@ -32,5 +32,5 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
-        name: VanillaOS 2 Beta ${{ env.CURRENT_DATE }} ${{ github.run_number }}
+        name: VanillaOS 2 Orchid ${{ env.CURRENT_DATE }}
         path: builds/
