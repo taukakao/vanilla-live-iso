@@ -5,6 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
+        # Please read here
+        **Warning**: you are opening a bug report for the live ISO, it means you have problems installing or booting the installation device. If you want to report a bug for Vanilla OS, please use the [desktop](https://github.com/Vanilla-OS/desktop-image)/[vm](https://github.com/Vanilla-OS/vm-image)/[nvidia](https://github.com/Vanilla-OS/nvidia-image) repo.
+        
         Thanks for taking the time to help us
         --------
         Don't worry, we eat bugs for breakfast.
@@ -26,20 +29,17 @@ body:
       description: |
         What steps would we have to take to reproduce the issue?
       placeholder: |
-          - Verify that the present partition is A (or B)
-          - Make sure that the future partition is the other one
-          - Reboot
-          - Check the present partition. Sometimes it's C.
+          - Flashed the ISO on my USB device
+          - Tried to boot it
+          - Nothing happen
     validations:
       required: true
   - type: dropdown
     id: os-version
     attributes:
       label: On what version of Vanilla OS this happens?
-      description: |
-        You can look it up in the Settings app, at the bottom of the About page.
       options:
-        - "22.10"
+        - "Vanilla OS 2 Orchid"
         - "Unreleased"
     validations:
       required: true
